@@ -1,0 +1,50 @@
+@media (max-width:940px) {
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #7c95bd;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+
+
+    }
+
+    nav ul li {
+        margin: 40px 0;
+        /* display: block; */
+
+    }
+
+
+    nav ul li a {
+        font-size: 30px;
+        display: block;
+
+
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        opacity: 0.8;
+        color: cyan;
+        /* background-color: cadetblue; */
+    }
+
+    .search {
+        display: flex;
+        /* flex-direction: column; */
+        padding-top: -50px;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+}
